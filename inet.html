@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Online Schmuck Store </title>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+<!-- font awesome cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- costum css file link -->
+<link rel="stylesheet" href="/Users/oula/Desktop/Archiv/inet.css">
+
+</head>
+<body>
+
+<!--header section starts -->
+
+<header class="header">
+
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>O&M</a>
+
+        <nav class="navbar">    
+            <a href="#home">Home</a>
+            <a href="#products">Produkte</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Bilderrr/Halskette.jpeg" alt="">
+                <div class="content">
+                    <h3>Halskette</h3>
+                    <span class="price">€14.99</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Bilderrr/set.jpeg" alt="">
+                <div class="content">
+                    <h3>Schmuck Set</h3>
+                    <span class="price">€49,99</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Bilderrr/Ringe.jpeg" alt="">
+                <div class="content">
+                    <h3>Ringe</h3>
+                    <span class="price">€9.99</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $19.69/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <button type="button" onclick="getInfo()">  </button> <!--gfgsggghgfhghgh-->
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+</header>
+
+<!--header Section ends -->
+
+<!--home section starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3> Schmuck online kaufen bei  <span> <br> Oula & Maram </span> </h3>
+        <p>The latest fashion trends</p>
+    </div>
+
+</section>
+
+<!--home section ends -->
+
+<!-- product section starts-->
+
+<section class="products" id="products">
+
+    <h1 class="heading">Unsere<span>Produkte</span></h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="Bilderrr/Halskette.jpeg" alt="">
+                <h3>Halskette</h3>
+                <div class="price"> €14.99 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">IN DEN WARENKORB</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Bilderrr/Set.png" alt="">
+                <h3>Schmuck Set</h3>
+                <div class="price"> €49.99 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">IN DEN WARENKORB</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Bilderrr/Ringe.png" alt="">
+                <h3>Ring</h3>
+                <div class="price"> €9.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">IN DEN WARENKORB</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Bilderrr/Armschmuck.png" alt="">
+                <h3>Armschmuck</h3>
+                <div class="price"> €7.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">IN DEN WARENKORB</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="Bilderrr/Ohr.png" alt="">
+                <h3> Ohrringe</h3>
+                <div class="price"> €19.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">IN DEN WARENKORB</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Bilderrr/Uhr.png" alt="">
+                <h3>Uhr</h3>
+                <div class="price"> €99.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">IN DEN WARENKORB</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Bilderrr/anhänger.png" alt="">
+                <h3>Anhänger</h3>
+                <div class="price"> €4.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">IN DEN WARENKORB</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Bilderrr/piercing.png" alt="">
+                <h3>Piercing Set</h3>
+                <div class="price"> €24.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">IN DEN WARENKORB</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- product section ends-->
+
+<!-- footer section starts-->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>O&M<i class="fas fa-shopping-basket"></i> </h3>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +49 1734 8765329 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> oulaundmaram@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Saarland, Deutschland 66111</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>Oula & Maram</span></div>
+
+</section>
+
+<!-- footer section ends-->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> 
+
+
+<!-- custom js file link-->
+<script src="/Users/oula/Desktop/Archiv/inet.js"> </script>
+
+</body>
+</html>
